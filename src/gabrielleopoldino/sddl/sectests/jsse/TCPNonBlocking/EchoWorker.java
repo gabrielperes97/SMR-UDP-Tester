@@ -1,4 +1,4 @@
-package gabrielleopoldino.sddl.sectests.jsse.DTLS;
+package gabrielleopoldino.sddl.sectests.jsse.TCPNonBlocking;
 
 import java.nio.channels.SocketChannel;
 import java.util.LinkedList;

@@ -15,10 +15,12 @@ public class CSVLogger {
     private PrintWriter printWriter;
     private long count;
     private Writer thread;
-    private int limit;
+
+    public CSVLogger(String logPath) {
+        this(logPath, 0);
+    }
 
     public CSVLogger(String logPath, int limit) {
-        this.limit = limit;
         queue = new LinkedBlockingQueue<>();
         file = new File(logPath);
         try {
